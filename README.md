@@ -9,6 +9,6 @@ Effective Link-Masking Method with Javascript &amp; base64
 
 <h2>Use Cases</h2>
 	<ul>
-		<li>Efficient crawler control, especially for websites that generate a lot of similar and duplicate content, e.g. through parameterizations.</li>
+		<li>Efficient crawler control, especially for websites that generate a lot of similar urls and duplicate content, e.g. through parameterizations.</li>
 		<li>Hiding sensitive information to protect privacy and prevent spam (e.g. the encryption of the email address).</li>
 	</ul>
