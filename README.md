@@ -3,9 +3,9 @@ Effective Link-Masking Method with Javascript &amp; base64
 
 <h2>Script Functionality</h2>
 
-<p>This script adds an event listener to the DOMContentLoaded event, which fires when the page's DOM has finished loading. When this event is triggered, the script selects all elements on the page that have the class "js-base64". It then removes any existing click event listeners from those elements and adds a new click event listener that calls the handleClick function.</p>
+<p>The script adds an event listener for the DOMContentLoaded event, which fires when the DOM of the page is fully loaded. Once the event fires, the script scans the page for elements with the individual class (in our example below, see js-base64 below). These elements contain the Base64-encoded URL, which is used instead of regular links.Then, the script adds an event listener to each element in the NodeList, which responds to the click event and executes the handleClick() function. The function is called when an element with class js-base64 is clicked.</p>
 
-<p>The handleClick function is defined within the script and takes the click event as its parameter. It first prevents the default behavior of the click event, which is to follow the link specified in the element's "href" attribute. Instead, it decodes the value of the "data-base64" attribute using the "atob" function, which decodes a Base64-encoded string. It then sets the window's location to the decoded URL, effectively redirecting the user to a new page.</p>
+<p>Then, the atob() function is used to decode the base64-encoded value in the data-base64 attribute of the clicked element. The decoded value is then passed as a new URL to the browser's window.location.href property to load the page pointed to by the Base64 string.</p>
 
 <h2>Use Cases</h2>
 	<ul>
