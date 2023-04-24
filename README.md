@@ -1,5 +1,5 @@
 # base64-link-masking
-Effective Link-Masking Method with Javascript &amp; base64
+Effective Link-Masking Method with Base64 & Javascript
 
 <h2>Script Functionality</h2>
 
